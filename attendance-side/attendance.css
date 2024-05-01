@@ -1,0 +1,297 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+}
+
+
+.container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;	
+	flex-direction: row;
+/*	background-color: #d1e0e0;*/
+}
+
+.side-option{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	background: #d1e0e0;
+	border-right: solid 2px dimgray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.side-option a{
+	position: relative;
+	width: 12em;
+	height: 3em;
+	border:  solid 2px dimgray;
+	box-shadow: 2px 2px 2px 2px black;
+	margin-top: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:white;
+	border-radius: 10px;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+#time_in{
+	background-color: rgba(0, 0, 200, 1);
+}
+#time_out{
+	background-color: rgba(200, 0, 0, 1);
+}
+#time_ot{
+	background-color: rgba(0, 200, 0, 1);
+}
+
+.display-entry{
+	position: relative;
+	width: 80%;
+	height: 100%;
+/*	background: blue;*/
+	display: flex;
+	flex-direction: column;
+
+}
+
+.date{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	background-color:#E4E9F7;
+	display: flex;
+	align-items: center;
+	border-bottom: solid 1px dimgray;
+}
+
+.date label{
+	position: relative;
+	display: flex;
+	font-weight: 600;
+	font-size: 1.5em;
+	border-radius: 5px;
+	border: solid 2px dimgray;
+	background-color: white;
+	width: 10em;
+	height: 1.5em;
+	justify-content: center;
+	align-items: center;
+	margin-left: 1em;
+	letter-spacing: 2px;
+	background-color: dimgray;
+	color: white;
+	box-shadow: 1px 1px 2px 2px black;
+
+
+
+}
+/* sdsa */
+
+.data-entry{
+	position: relative;
+/*	background-color: yellow;*/
+	height: 90%;
+	width: 100%;
+}
+
+
+
+
+.table-time{
+	position: relative;
+	height: 95%;
+	width: 99%;
+	border: solid 1px dimgray;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-radius: 2px;
+	box-shadow: 2px 2px 4px dimgray;
+
+}
+
+
+
+table{
+	position: relative;
+	border-collapse:collapse;
+
+
+}
+
+table thead{
+	box-shadow: 2px 2px 2px 2px #E4E9F7;
+ 	
+}	
+
+table thead tr{
+	background-color: dimgray;
+ 	font-size: 1em;
+	font-family:  "Segoe UI",Arial,sans-serif;
+ 	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+
+
+
+
+	
+}
+
+table thead th{
+	width: 300px;
+	height: 2.8em;
+
+
+	
+
+}
+
+table tbody{
+	background-color: #E4E9F7;
+}
+
+table tbody tr{
+	text-align: center;
+	border: solid #ddd 1px;
+	cursor: pointer;
+	font-weight: 600 ;
+
+
+
+	
+}
+
+table tbody tr:hover{
+	transform: scale(1.001);
+	text-align: center;
+	box-shadow: 2px 4px 2px rgba(30, 30, 30, .5), 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+table tbody tr td{
+	font-family: Trebuchet MS ;
+	height: 50px;
+}
+
+table tbody tr:nth-child(even)
+{
+	background-color: #d6d6c2;
+
+}
+
+/* pop up  */
+.pop-up-time-in{
+	position: absolute;
+	height: 110%;
+	width: 130%;
+	right: 0%;
+	bottom: 0%;
+	background-color: rgba(0, 0, 0, .8);
+	display: NONE;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-time-in{
+	position: relative;
+	height: 40%;
+	width:35%;
+	margin-left: 4em;
+	background-color: white;
+}
+
+form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	background-color: dimgray;
+	display: flex;
+	flex-direction: row;
+}
+
+.header label{
+	position: relative;
+	height: 100%;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 3em;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.header a{
+	position: relative;
+	height: 100%;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.body{
+	position: relative;
+	height: 90%;
+	width: 100%;
+/*	background-color: yellow;*/
+	display: flex;
+	flex-direction: column;
+	align-items: CENTER;
+}
+
+.body label{
+	position: relative;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+	color: black;
+	font-weight: 600;
+	margin-top: 3em;
+}
+.body input{
+	position: relative;
+	height: 2.5em;
+	width: 15em;
+	margin-bottom: 1EM;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+#close{
+	height: 1.6em;
+	width: 1.6em;
+}
+
+#btn-in{
+	background-color: rgba(0, 0, 200, 1.0);
+	font-size: 1em;
+	color: white;
+	font-weight: 600;
+	width: 12.5em;
+}

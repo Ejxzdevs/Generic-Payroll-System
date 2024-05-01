@@ -1,0 +1,311 @@
+@font-face{
+	font-family: label;
+	src: url  url(../../font/kanit/Kanit-Light.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+	overflow: hidden;
+}
+
+.container{
+		position: relative;
+		height:100%;
+		width: 100%;
+}
+
+.sub-container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	background: #E4E9F7;
+	flex-wrap: wrap;
+	overflow-y: auto;
+}
+
+/* box  */
+.dashboard-box{
+	position: relative;
+	height: 150px;
+	width:297px;
+/*	border: solid 1px black;*/
+	background:#E4E9F7;
+	margin-left: 1em;
+	margin-top: .5em;
+	display: flex;
+/*	background: yellow;*/
+
+}
+/* count of employees */
+
+
+
+/*COUNT OF DEPARTMENT*/
+
+/**/
+.box-emp{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+/*	border: 1px solid black;*/
+	background: white;
+	width: 90%;
+	height: 90%;
+	flex-direction: column;
+	box-shadow: 2px 2px 2px dimgray;
+	border-radius: 5px;
+}
+
+.top-emp{
+	height: 70%;
+	width: 100%;
+/*	background: blue;*/
+	display: flex;
+	flex-direction: row;
+
+}
+
+.bot-emp{
+	height: 30%;
+	width: 100%;
+/*	background: yellow;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: dimgray;
+}
+
+.bot-emp a{
+	position: relative;
+	font-weight: 600;
+	font-size: 1.2em;
+	font-family: 'Verdana';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+
+}
+
+.num_label{
+	position: relative;
+	height: 100%;
+	width:40%;
+/*	background: green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.num_label p{
+	font-size: 5em;
+	color: black;
+	font-weight: 600;
+
+}
+
+.num_image{
+	position: relative;
+	height: 100%;
+	width:60%;
+/*	background: orange;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.num_image img{
+	height: 9em;
+	width: 9em;
+}
+
+#try{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: 290px;
+	padding-left: 2em;
+}
+
+#leave_num{
+	display: flex;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#leave_num label{
+	margin-left: 1.5em;
+	margin-top: .2em;
+	font-weight: 600;
+	font-size: 1EM;
+}
+
+#leave_num label span{
+	font-weight: 300;
+	color: black;
+	font-size: 1.1EM;
+	margin-left: 1EM;
+}
+
+/*PAYROLL LIST*/
+.Payroll_list{
+	position: relative;
+	height: 300px;
+	width: 20em;
+	border: solid 1px black;
+	margin-left: .5em;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 2px dimgray;
+	border-radius: 5px;
+	overflow-y: auto;
+	margin-top: 1em;
+}
+
+.header-list{
+	height: 15%;
+	width: 100%;
+	background-color: dimgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-list p{
+	font-size: 1em;
+	font-family: 'Verdana';
+	font-weight: 600;
+	color: white;
+	margin-right:1em ;
+	letter-spacing: 1px;
+}
+
+.header-aa{
+	height: 10%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: .5em;
+	box-shadow: 2px 2px 2px dimgray;
+}
+
+.header-aa .id{
+	height: 100%;
+	width: 15%;
+/*	background: yellow;*/
+	text-align: center;
+	font-weight: 600;
+	display: flex;
+	justify-content: CENTER;
+	align-items: CENTER;
+}
+
+.header-aa .type{
+	height: 100%;
+	width: 50%;
+	text-align: center;
+	font-weight: 600;
+	display: flex;
+	justify-content: CENTER;
+	align-items: CENTER;
+}
+
+.header-aa .date{
+	width: 35%;
+	height: 100%;
+	text-align: center;
+	font-weight: 600;
+	display: flex;
+	justify-content: CENTER;
+	align-items: CENTER;
+}
+
+.payroll-content{
+	height: 75%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+	text-align: center;
+
+}
+
+#border-list {
+	border-collapse: collapse;
+	border: none;
+
+}
+
+.late-chart{
+	position: relative;
+	height: 20em;
+	width: 20em;
+	margin-left: 2em;
+	border: solid 1px black;
+	display: flex;
+}
+
+/*GROSS CHART*/
+
+.gross_salary_per_month{
+	height: 300px;
+	width: 700px;
+	border: solid 1px black;
+	margin-left: .5em;
+	margin-bottom: 2em;
+
+}
+
+.chart{
+	position: relative;
+	height: 200px;
+	width: 400px;
+	margin-left: 1em;
+	border: solid 1px black;
+}
+
+.pie-box{
+	border: solid 1px black;
+	height: 300px;
+	width: 700px;
+	display: flex;
+	flex-direction: row;
+	margin-left: .5em;
+	box-shadow: 2px 2px 2px dimgray;
+	margin-top: 1em;
+	justify-content: space-between;
+	margin-bottom: 1em;
+
+}
+
+.pie1{
+	position: relative;
+	width: 49.8%;
+	height: 100%;
+}
+
+.pie2{
+	position: relative;
+	width: 49.8%;
+	height: 100%;
+	border-left: 1px solid black;
+
+}

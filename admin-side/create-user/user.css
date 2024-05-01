@@ -1,0 +1,840 @@
+
+@font-face{
+			src:  url(../../font/kanit/Kanit-Light.ttf);
+			font-family: label;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+	overflow: hidden;
+}
+
+.home-navigation-bar ul li p{
+	font-size: 2rem;
+	position: relative;
+	left: 20%;
+	top: 7%;
+	font-family: "Roboto Mono",monospace;
+	color: white;
+
+}
+
+.home-navigation-bar ul li p span{
+	color:  violet;
+	font-weight: bold;
+	font-size: 3rem;
+	font-family: 'Times New Roman';
+}
+
+
+.home-navigation-bar ul li:nth-child(1){
+	pointer-events: none;
+	height:80PX;
+	background: #063146;
+
+}
+
+/*sub navi*/
+
+#sub-nav{
+	display: none;
+	background: #063146;
+
+
+
+}
+
+#nav{
+	position: relative;
+	padding: 4% 0;
+	
+	
+}
+
+#nav > a{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 1.2rem;
+	text-decoration: none;
+	right: -.5em;
+	color: white;
+	font-weight: bold;
+
+}
+
+#nav > a:hover{
+	color: crimson;
+	transition: .3s;
+}
+
+#nav > img{
+	position: absolute;
+	right: 10em;
+	height: 1.5em;
+	width: 1.5em;
+	
+}
+
+#arr-right{
+	position: relative;
+	width: 1em;
+	height: 1em;
+	left: 1em;
+	top: .2em;
+	display: inline;
+}
+
+#arr-up{
+	position: relative;
+	width: .8em;
+	height: .8em;
+	left: 4em;
+	top: .2em;
+}
+/**/
+
+
+
+.home-navigation-bar ul li label{
+	color: white;
+	font-size: 1.2rem;
+	padding: 0 22%;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.background .system-logo{
+	width: 100%;
+	height: 7%;
+	background: #042331;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	pointer-events: none;
+	border-bottom: solid 1px black;
+	
+}
+
+.system-logo .logo{
+	color: #fff;
+	font-family: 'arial';
+	overflow: hidden;
+	font-size: 22px;
+	top: 25%;
+	position: relative;
+}
+
+
+
+.div-background{
+	position: relative;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+}
+
+.home-navigation-bar{
+	width: 22%;
+	height: 100%;
+	background: #042331;
+	position: relative;
+	overflow: hidden;
+	/*border-left: solid black 1px;
+	border-right: solid black 1px;*/
+	/*border: 1px solid black;*/
+}
+
+
+.home-navigation-bar ul{
+	position: relative;
+	list-style: none;
+}
+
+
+
+.home-navigation-bar ul li{
+	padding: 3% 0;
+	border-bottom: solid black .5px;
+
+
+}
+
+
+
+/*.home-navigation-bar li:hover{
+	background: rgba(0, 0, 0, .2) ;
+	border-radius: 25px 0px 0px 25px;
+	left: 10%;
+	position: relative;
+
+}*/
+
+.home-navigation-bar ul li a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	padding: 0 13%;
+	
+
+
+}
+
+/**/
+
+
+
+
+
+.home-navigation-bar img{
+	height: 2rem;
+	width: 2rem;
+	position: relative;
+	right: 1rem;
+	top: .4rem;
+}
+
+
+
+
+
+/*/* home content */
+
+.home-content{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #E4E9F7;
+	/*background-color: white;*/
+
+}
+
+
+.home-content .user-head{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	/*background: black;*/
+}
+
+/* LABEL */
+
+.user-head .dir-label{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	display: flex;
+	/*background: blue;*/
+}
+
+.left{
+	position: relative;
+	width:50%;
+	height: 100%;
+/*	background: yellow;*/
+}
+
+.left label{
+	position: relative;
+	font-size: 1.3em;
+	color:black;
+	font-family: 'Verdana';
+	font-weight: 600;
+	border: solid 1px dimgray;
+	box-shadow: 2px 2px 2px 2px dimgray;
+	height: 2em;
+	width: 10em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: .5em;
+	margin-left: .5em;
+	}
+/* search bar */
+.right{
+	position: relative;
+	width:50%;
+	height: 100%;
+/*	background-color: green;*/
+}
+
+.right form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	right: 2em;
+	justify-content: right;
+	align-items: center;
+}
+
+.right form .containter-search{
+	position: relative;
+	/*border: solid 1px black;*/
+	width: 350px;
+	height: 3em;
+	color: gray;
+	background-color: white;
+	box-shadow: 2px 2px 4px ;
+	border-radius: 5px;
+	padding: .2em;
+
+
+
+}
+
+.containter-search .containter-input-search{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: dimgray;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	padding: .2em;
+
+}
+
+.containter-input-search .input{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	padding-left: .6em;
+	font-size: 1em;
+	outline: none;
+	margin-left: 1em;
+}
+
+.containter-input-search .search{
+	position: relative;
+	width: 20%;
+	height: 100%;
+}
+
+
+
+#img_search{
+	position: relative;
+	height: 1.6em;
+	width: 1.6em;
+	top: .2em;
+	left: .4em;
+	
+}
+
+/*table in user account*/
+
+.home-content .user-table{
+	position: relative;
+height: 80%;
+width: 99%;
+border: solid 1px dimgray;
+overflow-y: auto;
+overflow-x: hidden;
+border-radius: 2px;
+box-shadow: 2px 2px 4px dimgray;
+margin-left: .3em;
+}
+
+.user-table table{
+	position: relative;
+	width: 100%;
+	border-collapse: collapse;
+
+} 
+
+.user-table table thead tr{
+	background-color: dimgray;
+ 	font-size: 1em;
+	font-family:  "Segoe UI",Arial,sans-serif;
+ 	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+
+}
+
+.user-table table thead th{
+	width: 250px;
+	height: 2.8em;;
+	font-family: 'arial';
+}
+
+
+
+.user-table table tbody tr {
+	position: relative;
+	text-align: center;
+	color: #2e2e1f;
+	cursor: pointer;
+	height: 30px;
+	border-bottom: solid .5px black;
+}
+
+.user-table tbody tr:hover{
+	transform: scale(1.001);
+	text-align: center;
+	box-shadow: 2px 4px 2px rgba(30, 30, 30, .5), 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.user-table tbody tr td{
+	padding: .1em 0;
+	font-weight: 600;
+
+	font-family: Trebuchet MS ;
+}
+
+.user-table t tbody tr:nth-child(even)
+{
+	background-color: #c2c2a3;
+}
+
+.user-table table tbody tr td .img-emp{
+	position: relative;
+	height: 2rem;
+	width: 2rem;
+}
+
+ #edit-icon{
+	height: 2em;
+	width: 2em;
+	border-radius: 3px;
+	padding: .3em;
+	border: solid #4d88ff 2px;
+
+
+}
+
+#edit-icon:hover{
+	border: solid #00e600 2px;
+	
+}
+
+#delete-icon{
+	height: 2em;
+	width: 2em;
+	border-radius: 3px;
+	padding: .3em;
+	margin-left: .5em;
+	border: solid crimson 2px;
+
+}
+
+#delete-icon:hover{
+	border: solid #00e600 2px;
+	
+}
+
+
+
+/*user create account button*/
+
+.user-option{
+	position: relative;
+	width: 100%;
+	height: 20%;
+	display: flex;
+
+}
+
+.user-option .other-button {
+	position: relative;
+	width: 50%;
+	height: 90%;
+	/*background-color: blue;*/
+
+
+}
+
+.user-option .user-button{
+	position: relative;
+	width: 50%;
+	height: 90%;
+	/*background-color: yellow;*/
+	
+}
+
+.user-button a{
+	display: flex;
+	height: 2.5rem;
+	width: 12rem;
+	text-decoration: none;
+	color: #00004d;
+	border: black solid 2px;
+	border-radius: 10px;
+	text-align: right;
+	top: .4em;
+	left: 20.5rem;
+	font-size: 1.2rem;
+	position: relative;
+	font-family: Trebuchet MS ;
+	background-color: rgba(0, 0, 200, .8);
+	transition-duration: .5s ;
+	color: white;
+	box-shadow: 2px 2px 2px 2px dimgray;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.user-button img{
+	position: absolute;
+	height: 1.5rem;
+	width: 1.5rem;
+	left: 1rem;
+	bottom :.5rem;
+
+
+}
+
+
+/*pop up create account for user*/
+.pop-create-user{
+	position: absolute;
+	background: rgba(0, 0, 0, .3);
+	height: 110%;
+	width: 130%;
+	right: 0;
+	top: 10;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.box-create-user{
+	position: relative;
+	width: 38%;
+	height: 80%;
+	background:#E4E9F7;
+	left: 2em;
+
+}
+
+.box-create-user form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-create-user{
+	position: relative;
+	height: 10%;
+	width: 100%;display: flex;
+	flex-direction: row;
+	background-color: dimgray;
+	
+
+}
+
+.title-create-user label{
+	position: relative;
+	width: 90%;
+	height: 100%;
+/*	background-color: blue;*/
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: 2px;
+	left: 1em;
+}
+
+.title-create-user a{
+	position: relative;
+	width: 10%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#img-close{
+	position: relative;
+	height: 1.6em;
+	width: 1.6em;
+}
+
+.body-create-user{
+	position: relative;
+	height: 90%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.body-create-user label{
+	position: relative;
+	font-weight: 600;
+	margin-top: .5em;
+	
+
+}
+
+.body-create-user select{
+	position: relative;
+	width: 10.3em;
+	height: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+.body-create-user input{
+	position: relative;
+	width: 15em;
+	height: 2.5em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	text-align: center;
+	border-radius: 2px;
+
+}
+
+.body-create-user .button{
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	font-weight: 600;
+	background-color: rgba(0, 0, 200, .8);
+	color: white;
+	width: 11em;
+	position: relative;
+}
+
+
+/* edit */
+
+
+.edit-user{
+	position: absolute;
+	height: 110%;
+	width: 130%;
+	right: 0%;
+	bottom: 0%;
+	background-color: rgba(0, 0, 0, .8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.box-user{
+	position: relative;
+	height: 25%;
+	width: 60%;
+	background: white;
+	left: 4em;
+	bottom: 7em;
+}
+
+.box-user form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.box-user .title-user{
+	position: relative;
+	height: 20%;
+	width: 100%;
+	background: dimgray;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.box-user .title-user label{
+	position: relative;
+	width: 94%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 2em;
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.box-user .title-user a{
+	position: relative;
+	width: 6%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+#img-close{
+	height: 1.6em;
+	width: 1.6em;
+
+}
+
+/* body */
+
+.box-user .body-user{
+	position: relative;
+	height: 80%;
+	width: 100%;
+	background: #E4E9F7;
+	display: flex;
+	flex-direction: row;
+}
+
+.column-img{
+	position: relative;
+/*	background-color: blue;*/
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.column-user{
+	position: relative;
+/*	background-color: blue;*/
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.column-user label{
+	position: relative;
+	margin-bottom: 1em;
+	font-weight: 600;
+}
+
+.column-user input,select{
+	position: relative;
+	width: 8em;
+	height: 1.7em;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 1.2em;
+
+}
+
+
+.column-button{
+	position: relative;
+/*	background-color: blue;*/
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.column-button input{
+	position: relative;
+	width: 8em;
+	height: 1.7em;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 1em;
+	height: 2em;
+	margin-top: 2em;
+	font-weight: 600;
+	background-color: rgba(0, 0, 200, .8);
+	color: white;
+
+}
+
+
+#emp_img{
+	border-radius: 3px;
+height: 7em;
+width: 7em;	
+	border: 1px solid black;
+}
+
+/*SWITCH*/
+
+#switch{
+	position: relative;
+	height: 2.3em;
+	width: 1.8em;
+	border-radius: 3px;
+	padding-right: .3em;
+	border: solid dimgray 2px;
+	text-decoration: none;
+	margin-right: 1em;
+	bottom: .6em;
+	font-size: 1em;
+	color: white;
+	font-weight: 600;
+
+}
+
+.on {
+	position: relative;
+	text-decoration: none;
+	border: solid 1px black;
+	background: blue;
+	color: white;
+	padding: 5px;
+	bottom: 10px;
+	margin-right: 5px;
+}
+
+
+.off {
+	position: relative;
+	text-decoration: none;
+	border: solid 1px black;
+	background: red;
+	color: white;
+	bottom: 10px;
+	right: .1em;
+	padding: 1px;
+
+}
+
+
+
+
+#switch:hover{
+	border: solid #00e600 2px;
+	
+}

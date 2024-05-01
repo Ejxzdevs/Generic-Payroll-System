@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.container-image{
+	position: relative;
+	height: 100%;
+	width: 100%;
+/*	background-color: green;*/
+	display: flex;
+	justify-content: center;
+	align-content: center;
+/*	 background: #042331;*/
+	border-collapse: collapse;
+	font-weight: 600;
+
+
+}
+
+.box-image{
+	position: relative;
+	top: 1em;
+	height: 10em;
+	width: 13em;
+/*	background-color: white;*/
+/*	border: solid 1px black;*/
+	border-radius: 10px;
+/*		mix-blend-mode: multiply;*/
+}
+
+.box-image .image-logoo{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+/*	mix-blend-mode: multiply;*/
+	outline: none;
+}

@@ -1,0 +1,756 @@
+@font-face{
+	font-family: label;
+	src: url  url(../../font/kanit/Kanit-Light.ttf);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+	overflow: hidden;
+}
+
+.home-navigation-bar ul li p{
+	font-size: 2rem;
+	position: relative;
+	left: 20%;
+	top: 7%;
+	font-family: "Roboto Mono",monospace;
+	color: white;
+
+}
+
+.home-navigation-bar ul li p span{
+	color:  violet;
+	font-weight: bold;
+	font-size: 3rem;
+	font-family: 'Times New Roman';
+}
+
+
+.home-navigation-bar ul li:nth-child(1){
+	pointer-events: none;
+	height:80PX;
+	background: #063146;
+
+}
+
+/*sub navi*/
+
+#sub-nav{
+	display: none;
+	background: #063146;
+
+
+
+}
+
+#nav{
+	position: relative;
+	padding: 4% 0;
+	
+	
+}
+
+#nav > a{
+	position: relative;
+	left: 5em;
+	font-size: 1.2rem;
+	text-decoration: none;
+	right: -.5em;
+	color: white;
+	font-weight: bold;
+
+}
+
+#nav > a:hover{
+	color: crimson;
+	transition: .3s;
+}
+
+#nav > img{
+	position: absolute;
+	right: 10em;
+	height: 1.5em;
+	width: 1.5em;
+	
+}
+
+
+
+
+#arr-right{
+	position: relative;
+	width: 1em;
+	height: 1em;
+	left: 1em;
+	top: .2em;
+	display: inline;
+}
+
+#arr-up{
+	position: relative;
+	width: .8em;
+	height: .8em;
+	left: 4em;
+	top: .2em;
+}
+
+.sub-nav-management{
+	display: flex;
+	background:yellow;
+	position: relative;
+	height: 50%;
+	width: 100%;
+
+}
+
+
+
+
+
+
+
+
+/**/
+.home-navigation-bar ul li label{
+	color: white;
+	font-size: 1.2rem;
+	padding: 0 22%;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+
+.background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.background .system-logo{
+	width: 100%;
+	height: 7%;
+	background: #042331;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	pointer-events: none;
+	border-bottom: solid 1px black;
+	
+}
+
+.system-logo .logo{
+	color: #fff;
+	font-family: 'arial';
+	overflow: hidden;
+	font-size: 22px;
+	top: 25%;
+	position: relative;
+}
+
+
+
+.div-background{
+	position: relative;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+}
+
+.home-navigation-bar{
+	width: 22%;
+	height: 100%;
+	background: #042331;
+	position: relative;
+	overflow: hidden;
+	/*border-left: solid black 1px;
+	border-right: solid black 1px;*/
+	/*border: 1px solid black;*/
+}
+
+
+.home-navigation-bar ul{
+	position: relative;
+	list-style: none;
+}
+
+
+
+.home-navigation-bar ul li{
+	padding: 3% 4%;
+	border-bottom: solid black .5px;
+
+
+}
+
+
+
+.home-navigation-bar ul li a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	padding: 0 10%;
+	
+
+
+}
+
+.home-navigation-bar ul li a:hover{
+	transition-duration: .3s;
+	transition-property: all;
+	color: crimson;
+
+}
+
+
+
+
+
+
+.home-navigation-bar img{
+	height: 2rem;
+	width: 2rem;
+	position: relative;
+	right: 1rem;
+	top: .4rem;
+}
+
+
+
+
+
+/*/* home content */
+
+.home-content{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #E4E9F7;
+	/*background-color: white;*/
+
+}
+
+
+.home-content .user-head{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	/*background: black;*/
+}
+
+.user-head .dir-label{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	display: flex;
+	/*background: blue;*/
+}
+
+.left{
+	position: relative;
+	width:50%;
+	height: 100%;
+/*	background: yellow;*/
+}
+
+.left label{
+	position: relative;
+	font-size: 1.3em;
+	color:black;
+	font-family: 'Verdana';
+	font-weight: 600;
+	border: solid 1px dimgray;
+	box-shadow: 2px 2px 2px 2px dimgray;
+	height: 2em;
+	width: 10em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: .5em;
+	margin-left: .5em;
+
+}
+	
+}
+/* search bar */
+.right{
+	position: relative;
+	width:50%;
+	height: 100%;
+/*	background-color: green;*/
+}
+
+.right form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: RIGHT;
+	margin-right: 10em;
+}
+
+.right form .containter-search{
+	position: relative;
+	/*border: solid 1px black;*/
+	width: 350px;
+	height: 3em;
+	color: gray;
+	background-color: white;
+	box-shadow: 2px 2px 4px ;
+	border-radius: 5px;
+	padding: .2em;
+
+
+
+}
+
+.containter-search .containter-input-search{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: dimgray;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	padding: .2em;
+
+}
+
+.containter-input-search .input{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	padding-left: .6em;
+	font-size: 1em;
+	outline: none;
+	margin-left: 1em;
+}
+
+.containter-input-search .search{
+	position: relative;
+	width: 20%;
+	height: 100%;
+}
+
+
+
+#img_search{
+	position: relative;
+	height: 1.6em;
+	width: 1.6em;
+	top: .2em;
+	left: .4em;
+	
+}
+
+/*table in employee salary*/
+
+
+
+.body-holiday{
+	position: relative;
+	height: 80%;
+	width: 100%;
+	top: 1em;
+	/*background-color: yellow;*/
+}
+
+/**/
+.box-table{
+	position: relative;
+height: 95%;
+width: 99%;
+border: solid 1px dimgray;
+overflow-y: auto;
+overflow-x: hidden;
+border-radius: 2px;
+box-shadow: 2px 2px 4px dimgray;
+margin-left: .3em;
+
+}
+.box-table table{
+	border-collapse:collapse ;
+	position: relative;
+}
+
+.box-table table thead tr{
+	background-color: dimgray;
+ 	font-size: 1em;
+	font-family:  "Segoe UI",Arial,sans-serif;
+ 	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 600;
+
+}
+
+.box-table table thead th{	
+	width: 300px;
+	height: 2.8em;
+
+
+}
+
+.box-table tbody tr{
+	text-align: center;
+	color: #2e2e1f;
+	cursor: pointer;
+
+}
+.box-table.box-table tbody tr:hover{
+	transform: scale(1.001);
+	text-align: center;
+	box-shadow: 2px 4px 2px rgba(30, 30, 30, .5), 2px 2px 4px rgba(0, 0, 0, .5);
+
+}
+
+.box-table tbody tr td{
+
+	font-family: Trebuchet MS ;
+	border-bottom: solid .5px black;
+	padding-top: .3em;
+	font-weight: 600;
+}
+
+.box-table tbody tr:nth-child(even)
+{
+	background-color: #c2c2a3;
+}
+
+#edit-icon{
+	height: 2em;
+	width: 2em;
+	border-radius: 3px;
+	padding: .3em;
+	border: solid #4d88ff 2px;
+
+
+}
+
+#edit-icon:hover{
+	border: solid #00e600 2px;
+	
+}
+
+#delete-icon{
+	height: 2em;
+	width: 2em;
+	border-radius: 3px;
+	padding: .3em;
+	margin-left: 1em;
+	border: solid crimson 2px;
+
+}
+
+#delete-icon:hover{
+	border: solid #00e600 2px;
+	
+}
+
+/*footer*/
+.footer{
+	position: relative;
+	height: 20%;
+	width: 100%;
+	/*background-color: yellow;*/
+}
+
+#add_holiday{
+	position: relative;
+	height: 1.7em;
+	width: 1.7em;
+	right: 1.2em;
+	bottom: .3em;
+}
+
+
+.footer a{
+	display: flex;
+	height: 2.5rem;
+	width: 11.5rem;
+	text-decoration: none;
+	color: #00004d;
+	border: black solid 2px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: .5em;
+	left: 55.5em;
+	font-size: 1em;
+	position: relative;
+	font-family: Trebuchet MS ;
+	background-color: rgba(0, 0, 200, .8);
+	transition: all 1.5 ease;
+	transition-duration: .5s ;
+	color: white;
+	box-shadow: 2px 2px 2px 2px dimgray;
+
+}
+
+
+
+/*holiday*/
+.pop_new_deduction{
+	position: absolute;
+	background-color: rgba(0, 0, 0, .8);
+	height: 110%;
+	width: 130%;
+	right: 0%;
+	bottom: 0%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-pop{
+	position: relative;
+	height: 300px;
+	width:30em;
+	background: #E4E9F7;
+	display: flex;
+	flex-direction: column;
+	left: 4em;
+
+}
+
+.container-pop form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.title{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	background-color: dimgray;
+	display: flex;
+	flex-direction: row;
+}
+
+.title p{
+	position: relative;
+	width: 90%;
+	height: 100%;
+/*	background-color: yellowgreen;*/
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	padding-left: 3em;
+	font-family: 'Verdana';
+	font-weight: 600;
+}
+
+.title a{
+	position: relative;
+	width: 10%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#close_allowance{
+	height: 1.3em;
+	width: 1.3em;
+}
+
+/**/
+
+.top-allowance{
+	position: relative;
+	height: 60%;
+	width: 100%;
+/*	background-color: yellow;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.top-allowance label{
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-top: 1em;
+}
+
+.top-allowance input{
+	width: 170px;
+	height: 2em;
+	text-align: center;
+	margin-top: .5em;
+}
+
+.top-allowance select{
+	width: 170px;
+	height: 2em;
+	text-align: center;
+	margin-top: .5em;
+
+}
+
+
+
+/**/
+
+.button-allowance{
+	position: relative;
+	height: 40%;
+	width: 100%;
+/*	background-color: blue;*/
+	display: flex;
+	justify-content: Center;
+	
+}
+
+.button-allowance button{
+	position: relative;
+	width: 170px;
+	height: 2.5em;
+	border-radius: 5px;
+	background-color: #4568BA;
+	border: solid 2px dimgray;
+	color: white;
+	margin-top: 1em;
+
+
+}
+
+#emp_type{
+	display: none;
+}
+
+
+/*edit allowance*/
+.deduction-container{
+	position: absolute;
+	height: 110%;
+	width: 130%;
+	right: 0%;
+	bottom: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.deduction-box{
+	position: relative;
+	height: 20%;
+	width: 40%;
+	background-color: white;
+	left: 5%;
+	bottom: 16%;
+	display: flex;
+	flex-direction: column;
+}
+.title-edit-deduction{
+	height: 25%;
+	width: 100%;
+	background-color: dimgray;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.title-edit-deduction label{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding-left: 2em;
+/*	background-color: yellow;*/
+	font-size: 1.2em;
+	letter-spacing: 2px;
+}
+
+.title-edit-deduction a{
+	position: relative;
+	width: 10%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	display: flex;
+
+}
+
+#close{
+	height: 1.6em;
+	width: 1.6em;
+}
+
+.body-edit-deduction{
+	height: 75%;
+	width: 100%;
+	position: relative;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.body-edit-deduction form{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.body-edit-deduction form .box1{
+	position: relative;
+	width: 33.3%;
+	height: 100%;
+	background: #E4E9F7;
+/*	background-color: yellow;*/
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.box1 label{
+	position: relative;
+	margin-bottom: .5em;
+	font-weight: 600;
+}
+
+.box1 input{
+	position: relative;
+	height: 2em;
+	width: 8em;
+	border-radius: 5px;
+	padding-left: 1em;
+}
+
+.box1 button{
+	position: relative;
+	height: 2em;
+	width: 8em;
+	border-radius: 4px;
+	top: .8em;
+	color: white;
+	background-color: rgba(0, 0, 200, .8);
+}
+

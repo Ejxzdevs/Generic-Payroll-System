@@ -1,0 +1,229 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative;
+	height: 100%;
+	widows: 100%;
+}
+
+
+/* container */
+.container {
+	position: relative;
+	height: 100%;
+	widows: 100%;
+	display: flex;
+	flex-direction: row;
+	overflow-y: hidden;
+
+}
+
+
+/* side bar design */
+.container .side-bar{
+	position: relative;
+	width: 20%;
+	height: 100%;
+/*	background-color:#003333;*/
+	background-color: #262626;
+	display: flex;
+	flex-direction: column;
+	border-right: solid #042331 1px;
+
+}
+
+
+.top-side-bar{
+	position: relative;
+	height: 30%;
+	width: 100%;
+/*	background-color:#003333;*/
+	
+}
+
+/* LOWER */
+
+.lower-side-bar{
+	position: relative;
+	height: 70%;
+	width: 100%;
+/*	background-color: red;*/
+	display: flex;
+	flex-direction: column;
+	
+/*	border: solid blue 1px;*/
+/*	background: #042331;*/
+}
+
+
+.lower-side-bar a{
+	font-size: 1.2em;
+	color: WHITE;
+	margin-top: .5em;
+	margin-left: 2em;
+	text-decoration: none;
+	height: 2em;
+	width: 8em;
+/*	border: solid 1px black;*/
+	width: 100%;
+
+}
+
+.sub-payroll{
+	position: relative;
+	background: blue;
+	height: 25%;
+	width: 100%;
+	line-height: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 4em;
+	padding-bottom: 1.5em;
+	display: none;
+
+}
+
+
+
+.lower-side-bar img{
+	height: 1.3em;
+	width: 1.3em;
+	top: .5em;
+	position: relative;
+	right: .5em;
+
+
+}
+/* maintinance  */
+
+#maintinance-arrow-right{
+	position: relative;
+	left: 2.4em;
+	margin-bottom: .3em ;
+	height: 1.1em;
+	width: 1.1em;
+	
+}
+
+.maintinance-up{
+	margin-bottom: 1em;
+	position: relative;
+}
+
+#maintinance-arrow-up{
+	position: relative;
+	left: 11em;
+	height: 1.5em;
+	width: 1.5em;
+	
+}
+
+/* management arrow */
+
+
+#management-arrow-right{
+	position: relative;
+	left: 2em;
+	margin-bottom: .3em ;
+	height: 1.1em;
+	width: 1.1em;
+	
+}
+
+#management-arrow-up{
+	position: relative;
+	left: 11em;
+	height: 1.5em;
+	width: 1.5em;
+
+}
+
+.management-up{
+	margin-bottom: 1em;
+	position: relative;
+
+}
+
+
+
+
+/* MAINTINACE SUB NAV */
+
+.maintinance-sub-nav{
+	position: relative;
+	height: auto;
+	background: #063146;
+	display: none;
+	flex-direction: column;
+
+}
+
+
+.maintinance-sub-nav a{
+	padding-left: 3em;
+	color: white;
+	font-size: 1em;
+	
+}
+
+
+/* sub-nav employee */
+
+.management-emp{
+	position: relative;
+	height: auto;
+	background: #063146;
+	display: none;
+	flex-direction: column;
+	
+
+}
+
+.management-emp a{
+	padding-left: 3em;
+	color: white;
+	font-size: 1em;
+}
+
+
+
+
+
+/* top nav and content */
+
+.container .top-bot{
+	position: relative;
+	width: 80%;
+	height: 100%;
+/*	background: green;*/
+	display: flex;
+	flex-direction: column;
+/*	border: solid blue 1px;*/
+}
+
+/* top nav */
+
+.top-bot .top-nav{
+	position: relative;
+	height: 9%;
+	width: 100%;
+	background:#494949;
+	border-bottom: solid #042331 1px;
+}
+/* content */
+
+.top-bot .content{
+	position: relative;
+	height: 92%;
+	width: 100%;
+/*	background: green;*/
+
+/*	border: solid blue 1px;*/
+	
+}

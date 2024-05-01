@@ -1,0 +1,23 @@
+@media print {
+  #print-section {
+    display: block;
+  }
+  /* hide everything else */
+  body * {
+    visibility: hidden;
+  }
+  /* except for the div with id print-me */
+  #print-section, #print-section * {
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+
+  }
+  /* set the size of the printed page */
+  @page {
+    size: A4;
+    size: auto;
+    margin: 0;
+  }
+}
+

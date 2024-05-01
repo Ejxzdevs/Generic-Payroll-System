@@ -1,0 +1,159 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html ,body{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.main-container{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+/*	background-color: yellow;*/
+overflow-x: hidden ;
+
+
+}
+
+.main-container form{
+	position: relative;
+	height: auto;
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 2px 2px dimgray;
+	margin-left: .5em;
+	border: solid 1px black;
+	background-color: #E4E9F7;
+
+}
+
+
+
+.setting-option{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	margin-left: .5em;
+	margin-top: .5em;
+}
+
+.setting-option a{
+	position: relative;
+	width: 10em;
+	height: 50px;
+	border: solid 1px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	background-color: dimgray;
+/*	box-shadow: 2px 2px 2px 2px dimgray;*/
+	letter-spacing: 2px;
+	font-size: 1.3em;
+
+
+}
+/**/
+
+.header-logo{
+	position: relative;
+	height: 230px;
+	width: 100%;
+/*	background-color: yellow;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.img-container{
+	position: relative;
+	height: 95%;
+	width: 22%;
+	box-shadow: 2px 2px 2px 2px dimgray;
+	border: solid 1px dimgray;
+	display: flex;
+	flex-direction: column;
+	margin-top: .5em;
+	margin-left: 1em;
+	text-align: center;
+
+
+}
+
+.img-container label{
+	font-weight: 600;
+	font-family: 'Verdana';
+	font-size: 1.5em;
+
+}
+
+.img-container img{
+	height: 10em;
+	width: 12em;
+	border-radius: 10px;
+	margin-left: 1em;
+	border: solid 2px black;
+}
+
+.img-container input{
+	position: relative;
+	margin-left: 2em;
+	margin-top: .5em;
+}
+
+
+.system_name_container{
+	position: relative;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.system_name_container label{
+	margin-top: 1em;
+	margin-left: 1em;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: 'Verdana';
+}
+
+.system_name_container input{
+	position: relative;
+	width: 20em;
+	height: 3em;
+	margin-left: 1em;
+	margin-top: .5em;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 2px 2px 2px 2px dimgray;
+}
+
+
+
+
+#btn-save{
+	position: relative;
+	background-color: blue;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+}

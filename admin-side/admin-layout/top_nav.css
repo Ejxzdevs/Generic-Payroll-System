@@ -1,0 +1,133 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+	position: relative ;
+	height: 100%;
+	width: 100%;
+
+}
+
+@font-face{
+	src:  url(../../font/digital/digital-7.ttf);
+	font-family: realtime-clock;
+}
+
+.top_div{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+/*	background-color:#00326D;*/
+	
+}
+
+
+/*  */
+
+.top_div .clock{
+	position: relative;
+	width: 25%;
+	height: 100%;
+/*	background: green;*/
+	display: flex;
+	flex-direction: row;
+}
+
+.clock p{
+	position: relative;
+	height: 100%;
+	width: 6em;
+
+	font-size: 1.5em;
+	color: white;
+	font-weight: 600;
+	padding-left: 1em;
+	padding-top:.5em ;
+/*	background: yellow;*/
+	font-family: realtime-clock;
+
+}
+
+.clock img{
+	position: relative;
+	height: 2.2em;
+	width: 2.2em;
+	top:.2em ;
+	margin-top:.2em ;
+
+}
+
+/* title */
+
+.top_div .title1{
+	position: relative;
+	width: 50%;
+	height: 100%;
+/*	background: yellow;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.title1 p{
+	position: relative;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	color: white;
+}
+
+/**/
+
+.top_div .user{
+	position: relative;
+	width: 25%;
+	height: 100%;
+/*	background: blue;*/
+	display: flex;
+	flex-direction: row;
+}
+
+.user img{
+	position: relative;
+	height: 85%;
+	width: 3.5em;
+	top: 5px;
+	border-radius: 10px;
+	margin-left: 6em;
+	background: white;
+}
+
+.user .type{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.type .usertype{
+	height: 50%;
+	font-weight: 600;
+/*	background: green;*/
+	margin-left: 1em;
+	color: white;
+	font-size: 1em;
+	margin-top: 8px;
+}
+
+.type .username{
+	height: 50%;
+	font-weight: 600;
+/*	background: red;*/
+	margin-left: 1em;
+	color: white;
+	font-size: 1em;
+	margin-top: 3px;
+}
