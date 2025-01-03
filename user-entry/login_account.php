@@ -6,16 +6,14 @@ isset($_POST['submit']);
 if(empty($_POST['user']) && empty($_POST['pass']))
 {
 
-
 }else{
-
 	$username = trim($_POST['user']);
 	$password = trim($_POST['pass']);
 
-
-	$sql = "SELECT User_Type,Status,Username,Password,Employees_ID FROM tbl_accounts WHERE Username = '$username' AND Password = '$password' ";
+	$sql = "SELECT * FROM tbl_accounts WHERE TRIM(Username) = '$username' AND Password = '$password'";
 	$query = mysqli_query($conn,$sql);
-	$users=mysqli_fetch_array($query);
+	$users = mysqli_fetch_array($query);
+	if($user){
 
 	$id = $users['Employees_ID'];
 
@@ -27,6 +25,7 @@ if(empty($_POST['user']) && empty($_POST['pass']))
 	$_SESSION['status'] = $users['Status'];
 
 	if($_SESSION['type'] == "Admin")
+
 	{
 		if ($_SESSION['status'] == "Enable") {
 			echo header("Location: ../admin-side/dashboard/dashboard_layout.php");
@@ -40,13 +39,16 @@ if(empty($_POST['user']) && empty($_POST['pass']))
 	if($_SESSION['type'] == "Processor")
 	{
 		if ($_SESSION['status'] == "Enable") {
-			echo header("location: ../side-bar/dashboard/dashboard_layout.php");
+			header("location: ../side-bar/dashboard/dashboard_layout.php");
 			exit();
 		}else{
-			echo header("location: login.php");
+			header("location: login.php");
 			exit();
 		}
 	}
+
+	}else{
+		header("location: login.php");
+	}
  }
 
-?>
