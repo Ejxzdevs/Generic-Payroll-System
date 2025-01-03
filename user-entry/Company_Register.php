@@ -5,8 +5,6 @@ $date = date("Y-m-d");
 
 if(isset($_POST['submit'])){
 
-
-
 	$system_name = $_POST['system_name'];
 	$company_name = $_POST['company_name'];
 	$state = $_POST['state'];
